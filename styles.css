@@ -7,9 +7,9 @@ body,html {
 }
 
 
-/* div {
+div {
     border: 5px solid red;
-} */
+}
 
 .container {
     display: grid;
@@ -56,6 +56,7 @@ li {
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 1fr;
+    padding: 10px;
 }
 
 .tl {
@@ -75,7 +76,8 @@ li {
 
 .tr {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 40px;
     align-items: center;
     font-weight: bold;
     font-size: larger;
@@ -115,7 +117,8 @@ li {
 .buttons {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 40px;
 }
 
 button {
@@ -144,7 +147,7 @@ button {
     flex-direction: column;
 }
 
-.yp {
+.content-title {
     font-weight: bold;
     font-size: 18px;
 }
@@ -176,4 +179,18 @@ button {
     display: flex;
     gap: 25px;
     justify-content: end;
+}
+
+.ann-trend {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.announcements {
+    flex-grow: 1;
+}
+
+.trending {
+    flex-grow: 1;
 }
