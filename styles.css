@@ -7,9 +7,9 @@ body,html {
 }
 
 
-div {
+/* div {
     border: 5px solid red;
-}
+} */
 
 .container {
     display: grid;
@@ -140,6 +140,7 @@ button {
     display: grid;
     grid-template-columns: 2fr 1fr;
     padding: 20px;
+    gap: 32px;
 }
 
 .projects-container {
@@ -150,6 +151,7 @@ button {
 .content-title {
     font-weight: bold;
     font-size: 18px;
+    padding: 8px;
 }
 
 .tiles {
@@ -158,7 +160,7 @@ button {
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr;
     padding: 10px;
-    gap: 10px;
+    gap: 24px;
 }
 
 .tile {
@@ -184,13 +186,58 @@ button {
 .ann-trend {
     display: flex;
     flex-direction: column;
-
+    justify-content: space-around;
 }
 
 .announcements {
     flex-grow: 1;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.ann-tile {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    background-color: white;
+    border-radius: 15px;
+    padding: 32px;
+    gap: 32px;
+}
+
+.announcement {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.ann-title {
+    font-weight: bold;
 }
 
 .trending {
     flex-grow: 1;
+    padding: 10px;
+    display: flex;
+}
+
+.trend-tile {
+    background-color: white;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: space-around;
+    padding: 24px;
+}
+
+.acc {
+    display: flex;
+    padding: 10px;
+    gap: 20px;
+    
+}
+
+.user {
+    font-weight: bold;
 }
